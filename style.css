@@ -1,0 +1,86 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.cubilete {
+    background: #6ac520;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.primeros-dos {
+    margin: 10px;
+}
+
+.ultimos-tres {
+    margin: 10px;
+}
+
+.dado {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    
+}
+
+.dado:hover {
+    border: 1px solid #ffffff;
+    animation: rotation 2s linear infinite;
+}
+
+.rotar {
+    animation: rotation 2s linear infinite;
+}
+
+.selected {
+    border: 2px solid black;
+}
+
+.botones-lanzar {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.puntajes {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.puntos {
+    width: 70px;
+    font-weight: bold;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Generala</title>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <form name="cant_jugadores" action="#" method="get">
+                <label for="players">Seleccione la cantidad de jugadores</label>
+                <input type="number" name="players" min="1" max="5" step="1" id="players" value="1">
+                <input type="submit" onclick=" this.disabled=true; this.value='Enviando...'; enviar();">
+            </form>
+        </div>
+    </div>
+    <div class="cubilete" id="cubil">
+        <div class="primeros-dos">
+            <button class="dado" onclick="seleccion1()" id="dado1"></button>
+            <button class="dado" onclick="seleccion2()" id="dado2"></button>
+        </div>
+        
+        <div class="ultimos-tres">
+            <button class="dado" onclick="seleccion3()" id="dado3"></button>
+            <button class="dado" onclick="seleccion4()" id="dado4"></button>
+            <button class="dado" onclick="seleccion5()" id="dado5"></button>
+        </div>
+    </div>
+    <div class="botones-lanzar">
+        <button class="lanzar" id="lanzar" onclick="lanzar()">Lanzar</button>
+        <button class="lanzar" id="lanzarTodo" onclick="mezclarTodo()">Mezclar todo</button>
+        <button class="lanzar" id="pasar">Terminar turno</button>
+    </div>
+
+    <div class="puntajes">
+       <table id="puntajes-table">
+        <tr class="puntaje">
+            <td>1</td>
+        </tr>
+        <tr class="puntaje">
+            <td>2</td>
+        </tr>
+        <tr class="puntaje">
+            <td>3</td>
+        </tr>
+        <tr class="puntaje">
+            <td>4</td>
+        </tr>
+        <tr class="puntaje">
+            <td>5</td>
+        </tr>
+        <tr class="puntaje">
+            <td>6</td>
+        </tr>
+        <tr class="puntaje">
+            <td>Escalera</td>
+        </tr>
+        <tr class="puntaje">
+            <td>Full</td>
+        </tr>
+        <tr class="puntaje">
+            <td>Poker</td>
+        </tr>
+        <tr class="puntaje">
+            <td>Generala</td>
+        </tr>
+        <tr class="puntaje">
+            <td>GeneralaD</td>
+        </tr>  
+       </table> 
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
