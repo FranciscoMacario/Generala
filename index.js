@@ -31,36 +31,36 @@ function crearTablas(cant_total){
     }
 }
 
-function turnosDeJugada(cant_total_jugadores){
-    var turnos_en_total = 11 * cant_total_jugadores;
-    var contador_turnos = 0;
-    const boton_pasar = document.querySelector('#pasar');
-    const boto_lanzar = document.querySelector('#lanzar');
-    const boton_mezclar_todo = document.querySelector('#lanzarTodo');
-    while(contador_turnos < turnos_en_total) {
-        let turno_vigente = 3;
-        console.log('olis');
-        if(turno_vigente <= 3){
-            console.log('olis2');
-            boto_lanzar.addEventListener('click', function(){
-                turno_vigente--;
-                contador_turnos++;
-            })
-            boton_mezclar_todo.addEventListener('click', function(){
-                console.log('olis3');
-                turno_vigente--;
-                contador_turnos++;
-            })
-        } else if(turno_vigente == 0){    
-            console.log('olis4');
-            boton_pasar.addEventListener('click', function(){
-                turno_vigente = 0;
-                contador_turnos++
-            })
-        }
-        contador_turnos++;
-    }
-}
+// function turnosDeJugada(cant_total_jugadores){
+//     var turnos_en_total = 11 * cant_total_jugadores;
+//     var contador_turnos = 0;
+//     const boton_pasar = document.querySelector('#pasar');
+//     const boto_lanzar = document.querySelector('#lanzar');
+//     const boton_mezclar_todo = document.querySelector('#lanzarTodo');
+//     while(contador_turnos < turnos_en_total) {
+//         let turno_vigente = 3;
+//         console.log('olis');
+//         if(turno_vigente <= 3){
+//             console.log('olis2');
+//             boto_lanzar.addEventListener('click', function(){
+//                 turno_vigente--;
+//                 contador_turnos++;
+//             })
+//             boton_mezclar_todo.addEventListener('click', function(){
+//                 console.log('olis3');
+//                 turno_vigente--;
+//                 contador_turnos++;
+//             })
+//         } else if(turno_vigente == 0){    
+//             console.log('olis4');
+//             boton_pasar.addEventListener('click', function(){
+//                 turno_vigente = 0;
+//                 contador_turnos++
+//             })
+//         }
+//         contador_turnos++;
+//     }
+// }
 
 //funciones para lanzar
 function randomize() {
